@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Grafik belakang foto */
+.circle {
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-right: 9rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: none;
+}
+span{
+    color: #0f72b4;
+}
+
+.circle img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.bg-image {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.bg-image img {
+  transition: transform 0.5s ease;
+}
+.bg-image:hover img {
+  transform: scale(1.2);
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/* Home kiri */
+.content-left {
+  flex: 1;
+  text-align: left;
+  margin-left: 6rem;
+  margin-top: 7rem;
+}
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+p {
+    font-size: 20px;
+}
+
+.hubungi_Kami button {
+    background-color: #0f72b4;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 115px;
+    height: 50px;
+}
+button:active {
+    transform: scale(0.95);
+}
+
+.content-right {
+  margin-left: 20px; 
+}
+
+/* icon */
+.icon i{
+    margin-top: 9rem;
+    font-size: 30px;
+    color: #000;
+}
+.icon a:not(:first-child) {
+    margin-left: 1rem;
+}
+
+/* ABOUT ME */
+.aboutMe h3{
+    margin-top: 12rem;
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px; 
+    padding: 8rem;
+}
+.image-about {
+  flex: 1; 
+  margin-bottom: 6rem;
+  max-width: 300px; 
+}
+.image-about img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+}
+ .text-about{
+        flex: 1; 
+        max-width: 500px; 
+    }
+
+/*BUTTON DOWNLOAD */
+.download-cv button {
+    background-color: #0f72b4;
+    color: #fff;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+}
+button:active {
+    transform: scale(0.95);
+}
+
+/* SKILL KONTAINER */
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 45%; 
+}
+
+/* SKILL */
+.skillMe h3{
+    margin-top: 12rem;
+    text-align: center;
+    justify-content: center;
+}
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px; 
+    padding: 8rem;
+}
+.icon-skill{
+  font-size: 20px;
+  margin-left: 8rem;
+}
+.icon-skill p{
+  font-size: 16px;
+}
+
+/* HTML */
+#progressbarHtml {
+  background-color: #7cb9e2;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+#progressbarHtml>div {
+  background-color: #0f72b4;
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+}
+/* CSS */
+#progressbarCss {
+  background-color: #7cb9e2;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+#progressbarCss>div {
+  background-color: #0f72b4;
+  width: 60%;
+  height: 20px;
+  border-radius: 10px;
+}
+/* JS */
+#progressbarJs {
+  background-color: #7cb9e2;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+#progressbarJs>div {
+  background-color: #0f72b4;
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
+}
+/* REACT */
+#progressbarReact {
+  background-color: #7cb9e2;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+#progressbarReact>div {
+  background-color: #0f72b4;
+  width: 40%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+/* BACK END */
+.icon-skill-backend{
+  font-size: 20px;
+  margin-right: 8rem;
+}
+.icon-skill-backend p{
+  font-size: 16px;
+}
+#progressbarPy {
+  background-color: #7cb9e2;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+#progressbarPy>div {
+  background-color: #0f72b4;
+  width: 65%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #000 !important; 
+  color: #fff !important; /
+}
+#darkModeToggle {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+.dark-mode #darkModeToggle {
+  color: #fff; 
+}
+#darkModeToggle.dark-mode {
+  color: #fff;
+}
+.dark-mode .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.dark-mode .navbar-brand {
+    color: #fff !important;
+}
+.dark-mode .icon i {
+    color: #0f72b4;
+}
+.dark-mode .navbar-toggler{
+    color: #fff;
+    background-color: #fff;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-left {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .circle {
+    margin: 1rem auto 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* ABOUT ME RESPONSIVE STYLES */
+  .about {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-about {
+    flex: 1;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .text-about {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .icons-about {
+    margin-top: 10px;
+  }
+
+  /* Responsive Skill Styles */
+  .skill {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .icon-skill,
+  .icon-skill-backend {
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .icon-skill p,
+  .icon-skill-backend p {
+    font-size: 11px;
+  }
+
+  .progress-bar-container>div {
+    height: 10px;
+  }
+}
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="asset/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand" href="#">Ilham.</a>
+        <button class="navbar-toggler" type="button" id="navbarTogglerBtn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Portofolio</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">ContacMe</a>
+            </li>
+            <button id="darkModeToggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- konten home -->
+    <div class="container">
+      <div class="content-left">
+        <h1>Hi,I' am <span>Ilham</span></h1>
+        <p><span>Frontend</span> developer</p>
+        <p>
+          Junior level experience web design and<br />
+          development.
+        </p>
+        <div class="hubungi_Kami">
+          <button onclick="window.location.href='https://wa.me/6289606838895'">
+            ContacMe
+          </button>
+        </div>
+
+        <div class="icon">
+          <a href="https://www.instagram.com/_ollham" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/ollhamm" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.facebook.com/ilham.kusmayadi.5" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/ilham-kusmayadi" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="circle">
+          <div class="bg-image">
+            <img src="img/pp-ilham.jpeg" class="w-100" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div class="aboutMe" id="about">
+      <h3>About Me</h3>
+    </div>
+    <div class="about">
+      <div class="image-about">
+        <img src="img/ilham.png" alt="Your Image" />
+      </div>
+
+      <div class="text-about">
+        <p>
+          Introducing,<span>I am Ilham Kusmayadi</span>, a 19-year-old<br />
+          web developer based in<span> Yogyakarta</span>. With skills<br />
+          in<span> web development</span> and user interface design,<br />
+          I am committed to creating innovative digital solutions.<br />
+          With a youthful spirit and focus on quality,<br />
+          I continue to pursue advancements in the world of<br />
+          web development, ready to make a positive contribution through my
+          creativity and expertise.
+        </p>
+        <div class="download-cv">
+          <button onclick="downloadCV()">
+            Download CV <i class="fa-solid fa-download"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="skillMe" id="skill">
+      <h3>My Skill</h3>
+    </div>
+    <div class="skill-container">
+      <div class="skill" id="frontend-skill">
+        <div class="icon-skill">
+          <i class="fas fa-computer"></i>
+          <h4><span>Frontend </span>Developer</h4>
+          <div class="content-skill">
+            <p class="html">HTML</p>
+            <div id="progressbarHtml">
+              <div></div>
+            </div>
+            <p class="css">CSS</p>
+            <div id="progressbarCss">
+              <div></div>
+            </div>
+            <p class="js">JAVASCRIPT</p>
+            <div id="progressbarJs">
+              <div></div>
+            </div>
+            <p class="react">REACT</p>
+            <div id="progressbarReact">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACKEND SKILL -->
+      <div class="skill" id="backend-skill">
+        <div class="icon-skill-backend">
+          <i class="fas fa-computer"></i>
+          <h4><span>Backend </span>Developer</h4>
+          <div class="content-skill">
+            <p class="html">PYTHON</p>
+            <div id="progressbarPy">
+              <div></div>
+            </div>
+            <p class="css">NODE JS</p>
+            <div id="progressbarCss">
+              <div></div>
+            </div>
+            <p class="js">PHP</p>
+            <div id="progressbarJs">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="asset/index.js"></script>
+  </body>
+</html>
