@@ -1,8 +1,14 @@
 body {
+  justify-content: flex-end;
+  align-items: center;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
 }
+#navbarTogglerBtn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 
 /* Grafik belakang foto */
@@ -234,9 +240,46 @@ button:active {
   border-radius: 10px;
 }
 
+/* SERVICES */
+.services h3{
+    margin-top: 9rem;
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.card-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      padding: 0 20px;
+    }
+      .card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      position: relative;
+      margin: 10px;
+}
+     .card-content {
+      margin-top: 1rem;
+      font-size: 32px;
+      padding: 16px;
+      text-align: center;
+      flex-wrap: wrap; 
+      margin: 10px;
+    }
+.card-content p{
+  font-size: 14px;
+  color: #0f72b4;
+}
 
+ 
 
-
+    
 /* DARK MODE */
 .dark-mode {
   background-color: #000 !important; 
@@ -267,6 +310,9 @@ button:active {
 .dark-mode .navbar-toggler{
     color: #fff;
     background-color: #fff;
+}
+.dark-mode .card {
+    color: #0f72b4;
 }
 
 /* RESPONSIVE */
@@ -345,6 +391,16 @@ button:active {
     font-size: 12px;
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+   .card {
+    width: 100%;
+  }
+
+  .card-content {
+    font-size: 14px; 
+  }
+  .card-content p{
+    font-size: 12px; 
   }
 }
 
