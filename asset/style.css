@@ -140,7 +140,7 @@ button:active {
 
 /* SKILL */
 .skillMe h3{
-    margin-top: 12rem;
+    margin-top: 10rem;
     text-align: center;
     justify-content: center;
 }
@@ -217,7 +217,6 @@ button:active {
 /* BACK END */
 .icon-skill-backend{
   font-size: 20px;
-  margin-right: 8rem;
 }
 .icon-skill-backend p{
   font-size: 16px;
@@ -296,7 +295,7 @@ button:active {
     height: 200px;
   }
 
-  /* ABOUT ME RESPONSIVE STYLES */
+  /* ABOUT  */
   .about {
     padding: 2rem;
     flex-direction: column;
@@ -320,7 +319,7 @@ button:active {
     margin-top: 10px;
   }
 
-  /* Responsive Skill Styles */
+  /* SKILL */
   .skill {
     flex-direction: column;
     align-items: center;
@@ -341,6 +340,11 @@ button:active {
 
   .progress-bar-container>div {
     height: 10px;
+  }
+   .icon-skill-backend {
+    font-size: 12px;
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 }
 
