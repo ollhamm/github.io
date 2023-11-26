@@ -1,9 +1,11 @@
 body {
-  justify-content: flex-end;
   align-items: center;
+  justify-content: center;
   margin: 0;
-
+  padding: 0;
+  height: 100vh;
 }
+
 #navbarTogglerBtn:focus {
     outline: none;
     box-shadow: none;
@@ -242,8 +244,7 @@ button:active {
 
 /* SERVICES */
 .services h3{
-    margin-top: 9rem;
-    padding-bottom: 5px;
+    margin-top: 5rem;
     text-align: center;
     justify-content: center;
 }
@@ -251,7 +252,6 @@ button:active {
       display: flex;
       justify-content: center;
       margin-top: 5rem;
-      margin-bottom: 5rem;
       padding: 0 20px;
     }
       .card {
@@ -276,9 +276,32 @@ button:active {
   font-size: 14px;
   color: #0f72b4;
 }
+.bawah-kartu p{
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  text-align: center;
+}
 
- 
+/* portofolio */
+.porto p{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  text-align: center;
+}
 
+/* porto */
+.porto h3{
+    margin-top: 9rem;
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+}
     
 /* DARK MODE */
 .dark-mode {
@@ -397,7 +420,7 @@ button:active {
   }
 
   .card-content {
-    font-size: 14px; 
+    font-size: 20px; 
   }
   .card-content p{
     font-size: 12px; 
