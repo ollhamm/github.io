@@ -46,3 +46,31 @@ function flipCard(card) {
   // Menyimpan kartu yang baru saja dibuka
   openCard = card.classList.contains("flipped") ? card : null;
 }
+
+
+// menutup hamburger mneu
+document.addEventListener('DOMContentLoaded', function () {
+  var body = document.getElementById('body');
+  var navbarTogglerBtn = document.getElementById('navbarTogglerBtn');
+  var navbarNav = document.getElementById('navbarNav');
+
+  // Fungsi untuk menutup menu jika diklik di luar area hamburger menu
+  function closeMenu() {
+    navbarTogglerBtn.classList.add('collapsed');
+    navbarNav.classList.remove('show');
+  }
+
+  // Event listener untuk mendeteksi klik di luar area hamburger menu
+  body.addEventListener('click', function (event) {
+    var isClickInsideNavbar = navbarNav.contains(event.target) || navbarTogglerBtn.contains(event.target);
+    if (!isClickInsideNavbar) {
+      closeMenu();
+    }
+  });
+
+  // Event listener untuk menutup menu ketika salah satu item di dalam menu diklik
+  navbarNav.addEventListener('click', function () {
+    closeMenu();
+  });
+});
+
