@@ -25,3 +25,24 @@ function downloadCV() {
   link.click();
   document.body.removeChild(link);
 }
+
+
+// services
+function flipCard(card) {
+  card.classList.toggle("flipped");
+}
+
+// menutup kartu 
+let openCard = null;
+
+function flipCard(card) {
+  card.classList.toggle("flipped");
+
+  if (openCard && openCard !== card) {
+    // Menutup kartu yang sebelumnya terbuka
+    openCard.classList.remove("flipped");
+  }
+
+  // Menyimpan kartu yang baru saja dibuka
+  openCard = card.classList.contains("flipped") ? card : null;
+}
