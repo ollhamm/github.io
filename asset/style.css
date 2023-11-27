@@ -382,7 +382,7 @@ button:active {
 }
 .content-kontak .left-side .details i{
   font-size: 30px;
-  color: #3e2093;
+  color: #0f72b4;
   margin-bottom: 10px;
 }
 .content-kontak .left-side .details .topic{
@@ -392,7 +392,7 @@ button:active {
 .content-kontak .left-side .details .text-one,
 .content-kontak .left-side .details .text-two{
   font-size: 12px;
-  color: #afafb6;
+  color: #0f72b4;
 }
 .kontak .content-kontak .right-side{
   width: 75%;
@@ -401,7 +401,7 @@ button:active {
 .content-kontak .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: #3e2093;
+  color: #0f72b4;
 }
 
 .right-side .input-box{
@@ -438,12 +438,12 @@ button:active {
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #3e2093;
+  background: #0f72b4;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #5029bc;
+  background: #0f72b4;
 }
 
 
