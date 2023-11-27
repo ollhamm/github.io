@@ -481,6 +481,10 @@ button:active {
 .dark-mode .card {
     color: #0f72b4;
 }
+.dark-mode .kontak{
+  color: #fff;
+  background-color: #000;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
@@ -573,6 +577,12 @@ button:active {
   .card-content p{
     font-size: 12px; 
   }
+
+  .card.flipped .card-back p {
+  transform: rotateY(0deg);
+  margin-left: 1.5rem;
+  text-align: center;
+}
 
   /* CONTACT ME */
   .kontak{
